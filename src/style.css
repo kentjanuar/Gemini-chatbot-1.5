@@ -1,0 +1,182 @@
+/* Background gradient */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Chat container styling */
+.chat-container {
+  width: 90%;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  padding: 15px;
+  background: #f4f4f9;
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Chatbox styling */
+/* Chatbox styling */
+.chatbox {
+  flex: 1;
+  overflow-y: auto;
+  padding: 15px;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Tambahkan jarak antar pesan */
+}
+
+.chatbox .message {
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  display: inline-block;
+}
+
+/* Pesan dari user rata kanan */
+.chatbox .user {
+  background: #007bff;
+  color: #fff;
+  align-self: flex-end; /* Rata kanan */
+  text-align: right;
+  border-bottom-right-radius: 0; /* Hilangkan sudut kanan bawah */
+}
+
+/* Pesan dari bot rata kiri */
+.chatbox .bot {
+  background: #e9ecef;
+  color: #333;
+  align-self: flex-start; /* Rata kiri */
+  text-align: left;
+  border-bottom-left-radius: 0; /* Hilangkan sudut kiri bawah */
+}
+
+/* Input container styling */
+.input-container {
+  display: flex;
+  padding: 10px;
+  background: #f4f4f9;
+  border-top: 1px solid #ddd;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Scrollbar styling */
+.chatbox::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chatbox::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.chatbox::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+/* Tombol upload */
+#uploadBtn {
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #6c757d;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#uploadBtn:hover {
+  background-color: #5a6268;
+}
+
+/* Styling untuk pesan file */
+.file-message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  max-width: 70%;
+}
+
+.file-message.user {
+  align-self: flex-end;
+  background-color: #e7f3ff;
+  border-color: #007bff;
+}
+
+.file-message.bot {
+  align-self: flex-start;
+  background-color: #f4f4f9;
+  border-color: #333;
+}
+
+.file-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.view-button {
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.view-button:hover {
+  background-color: #0056b3;
+}
