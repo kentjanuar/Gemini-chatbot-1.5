@@ -1,7 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 
 // Inisialisasi API dengan API key
-const ai = new GoogleGenAI({ apiKey: "AIzaSyAqwIpUtkS8ZxE9RPtk2LRgcQNQhM3KHeI" }); // Ganti dengan API key Anda
+const ai = new GoogleGenAI({ apiKey: "AIzaSyC2SoEEiCfcVG7Vp9SvQME_kdXxHgsZhk4" }); // Ganti dengan API key Anda
 
 // Elemen DOM
 const chatbox = document.getElementById("chatbox");
